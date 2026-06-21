@@ -3,26 +3,31 @@
 =================================================================== */
 document.addEventListener("DOMContentLoaded", function () {
 
-  /* ----- Lien de réservation à connecter -----
-     Remplacez l'URL ci-dessous par votre vrai lien (Resalib, Planity,
-     Doctolib…). Tous les boutons "Réserver" pointant vers #reservations
-     restent internes ; le bouton principal ouvre ce lien externe.        */
-  var BOOKING_URL = "";        // ex. "https://www.resalib.fr/praticien/..."
+  /* =====================================================================
+     LIENS À CONNECTER — renseignez vos vraies URL ci-dessous.
+     Tant qu'une URL reste vide, le bouton affiche un rappel.
+  ===================================================================== */
+  var RESALIB_URL      = "";   // ex. "https://www.resalib.fr/praticien/..."
+  var SUMUP_URL        = "";   // ex. "https://...sumup..."
   var GOOGLE_REVIEW_URL = "";  // ex. "https://g.page/r/XXXX/review"
 
-  var bookingBtn = document.getElementById("bookingBtn");
-  if (bookingBtn) {
-    if (BOOKING_URL) {
-      bookingBtn.setAttribute("href", BOOKING_URL);
-      bookingBtn.setAttribute("target", "_blank");
-      bookingBtn.setAttribute("rel", "noopener");
+  function wireBooking(id, url, label) {
+    var btn = document.getElementById(id);
+    if (!btn) return;
+    if (url) {
+      btn.setAttribute("href", url);
+      btn.setAttribute("target", "_blank");
+      btn.setAttribute("rel", "noopener");
     } else {
-      bookingBtn.addEventListener("click", function (e) {
+      btn.addEventListener("click", function (e) {
         e.preventDefault();
-        alert("Lien de réservation à configurer dans script.js (variable BOOKING_URL).");
+        alert("Lien de réservation « " + label + " » à configurer dans script.js.");
       });
     }
   }
+  wireBooking("bookingResalib", RESALIB_URL, "Resalib");
+  wireBooking("bookingSumup", SUMUP_URL, "SumUp");
+
   if (GOOGLE_REVIEW_URL) {
     document.querySelectorAll(".btn-add-review").forEach(function (a) {
       a.setAttribute("href", GOOGLE_REVIEW_URL);

@@ -238,9 +238,13 @@ h3{font-size:1.3rem;color:var(--violet-700)}
 .soin-card:hover::before{transform:scaleX(1)}
 .soin-ico{font-size:2.6rem;margin-bottom:14px}
 .soin-card h3{margin-bottom:10px}
-.soin-card p{color:var(--ink-soft);font-size:.95rem;margin-bottom:18px}
-.card-link{color:var(--violet);font-weight:600;font-size:.92rem;transition:gap .3s;display:inline-block}
+.soin-card p{color:var(--ink-soft);font-size:.95rem;margin-bottom:14px}
+.soin-bullets{list-style:none;margin:0 0 18px;display:flex;flex-direction:column;gap:8px}
+.soin-bullets li{position:relative;padding-left:22px;color:var(--ink);font-size:.92rem}
+.soin-bullets li::before{content:"";position:absolute;left:0;top:8px;width:8px;height:8px;border-radius:50%;background:linear-gradient(135deg,var(--violet),var(--pink))}
+.card-link{color:var(--violet);font-weight:600;font-size:.92rem;transition:gap .3s;display:inline-block;margin-top:auto}
 .card-link:hover{color:var(--pink)}
+.soin-card{display:flex;flex-direction:column}
 
 /* Tarifs */
 .tarifs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:stretch}
@@ -309,6 +313,10 @@ h3{font-size:1.3rem;color:var(--violet-700)}
 .section--cta h2{color:#fff;margin:10px 0 18px}
 .reservations>p{color:rgba(255,255,255,.92);font-size:1.1rem;margin-bottom:30px}
 .reservation-note{font-size:.85rem;color:rgba(255,255,255,.7);margin-top:22px}
+.loc-card{display:inline-flex;align-items:center;gap:14px;text-align:left;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);backdrop-filter:blur(6px);border-radius:var(--radius);padding:16px 22px;margin-top:30px;max-width:560px}
+.loc-pin{font-size:1.6rem;flex:none}
+.loc-card strong{display:block;color:#fff;margin-bottom:2px}
+.loc-card span{color:rgba(255,255,255,.85);font-size:.9rem}
 
 /* Footer */
 .site-footer{background:var(--violet-deep);color:rgba(255,255,255,.8);padding:64px 0 26px}
