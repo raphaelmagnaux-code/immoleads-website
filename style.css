@@ -414,7 +414,7 @@ body .btn-outline.on-light{
 }
 .stat-strip .wrap{
   display:grid;
-  grid-template-columns:repeat(4,1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:0;
 }
 .stat-item{
@@ -613,13 +613,6 @@ body .btn-outline.on-light{
   padding:90px 0;
   position:relative;
   overflow:hidden;
-}
-.cta-band::before{
-  content:"";
-  position:absolute; left:50%; top:0;
-  width:1px; height:40px;
-  background:var(--gold);
-  transform:translateX(-50%);
 }
 .cta-band h2{
   font-size:clamp(28px,3.6vw,42px);
