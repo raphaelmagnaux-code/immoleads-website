@@ -3,235 +3,409 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ImmoLeads — Génération de mandats vendeurs pour agences immobilières</title>
-<meta name="description" content="ImmoLeads conçoit et pilote vos campagnes Meta Ads pour générer des estimations gratuites qualifiées, transformées en rendez-vous puis en mandats signés.">
+<title>En Toute Sérénité 74 — Réflexologie plantaire & massage bien-être à Arenthon</title>
+<meta name="description" content="En Toute Sérénité 74 : réflexologie plantaire, massages bien-être et Reïki à Arenthon (Haute-Savoie), près de La Roche-sur-Foron et Bonneville. Réservez votre séance de détente en ligne.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<header class="site-header">
-  <div class="wrap">
-    <a href="index.html" class="logo"><span class="dot"></span>Immo<span class="accent">Leads</span></a>
-    <nav class="nav-desktop">
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="header">
+  <div class="wrap header-inner">
+    <a href="#accueil" class="brand">
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4-3-7-6-7-10a7 7 0 0 1 14 0c0 4-3 7-7 10z"/><path d="M12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+      </span>
+      <span class="brand-text">En&nbsp;Toute&nbsp;<span class="brand-accent">Sérénité</span>&nbsp;74</span>
+    </a>
+
+    <nav class="nav-desktop" aria-label="Navigation principale">
       <ul class="nav-links">
-        <li><a href="index.html" class="active">Accueil</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="resultats.html">Résultats</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="#accueil">Accueil</a></li>
+        <li><a href="#qui-suis-je">Qui suis-je&nbsp;?</a></li>
+        <li><a href="#pourquoi">Pourquoi venir&nbsp;?</a></li>
+        <li><a href="#soins">Soins</a></li>
+        <li><a href="#tarifs">Tarifs</a></li>
+        <li><a href="#cartes-cadeaux">Cartes cadeaux</a></li>
+        <li><a href="#avis">Avis clients</a></li>
       </ul>
-      <a href="contact.html" class="btn btn-gold">Réserver un appel</a>
+      <a href="#reservations" class="btn btn-primary btn-sm">Réserver</a>
     </nav>
+
     <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      <span></span><span></span><span></span>
     </button>
   </div>
-  <div class="nav-mobile">
-    <a href="index.html">Accueil</a>
-    <a href="services.html">Services</a>
-    <a href="resultats.html">Résultats</a>
-    <a href="contact.html">Contact</a>
-    <a href="contact.html" class="btn btn-gold">Réserver un appel</a>
+
+  <div class="nav-mobile" id="navMobile">
+    <a href="#accueil">Accueil</a>
+    <a href="#qui-suis-je">Qui suis-je&nbsp;?</a>
+    <a href="#pourquoi">Pourquoi venir me voir&nbsp;?</a>
+    <a href="#soins">Soins proposés</a>
+    <a href="#tarifs">Tarifs &amp; forfaits</a>
+    <a href="#cartes-cadeaux">Cartes cadeaux</a>
+    <a href="#avis">Avis clients</a>
+    <a href="#reservations" class="btn btn-primary">Réserver en ligne</a>
   </div>
 </header>
 
-<section class="hero">
-  <div class="wrap">
-    <div>
-      <div class="eyebrow">Agence spécialisée — Agences immobilières</div>
-      <h1>Remplissez votre agenda de <em>mandats vendeurs</em>, sans décrocher le téléphone.</h1>
-      <p class="sub">ImmoLeads conçoit et pilote vos campagnes Meta Ads pour générer des demandes d'estimation gratuites, qualifiées par téléphone, puis transformées en rendez-vous avec des vendeurs sérieux.</p>
+<!-- ============ HERO ============ -->
+<section class="hero" id="accueil">
+  <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-overlay" aria-hidden="true"></div>
+  <span class="blob blob-1" aria-hidden="true"></span>
+  <span class="blob blob-2" aria-hidden="true"></span>
+
+  <div class="wrap hero-inner">
+    <div class="hero-text reveal">
+      <span class="eyebrow">Réflexologie • Massage bien-être • Reïki</span>
+      <h1>Offrez à votre corps<br>un véritable moment<br><em>de sérénité</em>.</h1>
+      <p class="lead">Réflexologie plantaire et massages bien-être à <strong>Arenthon</strong>, en Haute-Savoie&nbsp;(74), près de La Roche-sur-Foron et Bonneville.</p>
       <div class="cta-row">
-        <a href="contact.html" class="btn btn-gold">Réserver un appel découverte</a>
-        <a href="resultats.html" class="btn btn-outline">Voir nos résultats</a>
+        <a href="#reservations" class="btn btn-primary btn-glow">Réserver un rendez-vous</a>
+        <a href="#soins" class="btn btn-ghost">Découvrir les soins</a>
+      </div>
+      <div class="hero-trust">
+        <span class="stars" aria-hidden="true">★★★★★</span>
+        <span>Avis <strong>5/5</strong> sur Google</span>
       </div>
     </div>
-    <div class="estimation-card">
-      <div class="ec-ribbon">Gratuit</div>
-      <div class="ec-head">
-        <div>
-          <div class="ec-label">Demande d'estimation</div>
-          <div class="ec-title">Estimation de bien</div>
+
+    <!-- Carrousel photos cabinet -->
+    <div class="hero-media reveal">
+      <div class="photo-frame">
+        <div class="carousel" id="carousel">
+          <figure class="slide is-active" data-img="images/cabinet-1.jpg">
+            <span class="ph-icon">🌿</span>
+            <figcaption>Le cabinet — réflexologie plantaire</figcaption>
+          </figure>
+          <figure class="slide" data-img="images/cabinet-2.jpg">
+            <span class="ph-icon">🕯️</span>
+            <figcaption>Un cocon de détente à Arenthon</figcaption>
+          </figure>
+          <figure class="slide" data-img="images/cabinet-3.jpg">
+            <span class="ph-icon">💆‍♀️</span>
+            <figcaption>Massage bien-être &amp; Reïki</figcaption>
+          </figure>
         </div>
-        <div class="seal">Estimation<br>offerte</div>
+        <button class="car-btn prev" aria-label="Photo précédente">‹</button>
+        <button class="car-btn next" aria-label="Photo suivante">›</button>
+        <div class="dots" id="dots"></div>
       </div>
-      <div class="ec-field"><span>Type de bien</span><span>Maison</span></div>
-      <div class="ec-field"><span>Ville</span><span>— — — — —</span></div>
-      <div class="ec-field"><span>Surface</span><span>— — m²</span></div>
-      <div class="ec-field"><span>Délai de vente</span><span>— — — — —</span></div>
-      <div class="ec-foot">
-        <span>Lead généré via Meta Ads</span>
-        <span>Qualifié sous 24h</span>
+    </div>
+  </div>
+
+  <a href="#bienvenue" class="scroll-cue" aria-label="Défiler vers le bas">
+    <span></span>
+  </a>
+  <div class="wave-divider" aria-hidden="true">
+    <svg viewBox="0 0 1440 100" preserveAspectRatio="none"><path d="M0,40 C240,90 480,90 720,55 C960,20 1200,20 1440,55 L1440,100 L0,100 Z"></path></svg>
+  </div>
+</section>
+
+<!-- ============ BIENVENUE ============ -->
+<section class="section" id="bienvenue">
+  <div class="wrap welcome">
+    <div class="welcome-text reveal">
+      <span class="kicker">Bienvenue sur mon site</span>
+      <h2>Un instant rien que pour vous</h2>
+      <p>Je vous accueille dans mon cabinet de <strong>réflexologie plantaire</strong>, de <strong>massages bien-être</strong> et de <strong>Reïki</strong> à Arenthon, en Haute-Savoie&nbsp;(74), près de La Roche-sur-Foron et Bonneville, non loin de Reignier et Annemasse.</p>
+      <p>Je propose des séances personnalisées, dans une ambiance douce et apaisante, pour relâcher les tensions, retrouver de l'énergie et prendre soin de vous, en toute sérénité.</p>
+      <a href="#reservations" class="btn btn-primary">Prendre rendez-vous</a>
+    </div>
+    <div class="welcome-cards">
+      <div class="mini-card reveal"><span>👣</span><h3>Réflexologie plantaire</h3><p>Stimuler les zones réflexes pour rééquilibrer le corps.</p></div>
+      <div class="mini-card reveal"><span>💆‍♀️</span><h3>Massages bien-être</h3><p>Dos, tête, bras, massage assis… une détente profonde.</p></div>
+      <div class="mini-card reveal"><span>✨</span><h3>Reïki</h3><p>Harmoniser l'énergie et apaiser le mental.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUI SUIS-JE ============ -->
+<section class="section section--soft" id="qui-suis-je">
+  <div class="wrap split">
+    <div class="split-media reveal">
+      <div class="portrait-frame">
+        <div class="portrait" data-img="images/sylvie.jpg"><span class="ph-icon">🌸</span></div>
+        <span class="portrait-badge">Sylvie</span>
+      </div>
+    </div>
+    <div class="split-text reveal">
+      <span class="kicker">Qui suis-je&nbsp;?</span>
+      <h2>Sylvie, praticienne en bien-être</h2>
+      <p>Passionnée par les approches naturelles du bien-être, je me suis formée à la <strong>réflexologie plantaire</strong>, aux <strong>massages bien-être</strong> et au <strong>Reïki</strong> pour vous accompagner vers plus de détente et d'équilibre.</p>
+      <p>À l'écoute et bienveillante, j'adapte chaque séance à vos besoins du moment&nbsp;: gestion du stress, sommeil, tensions physiques ou émotionnelles. Mon objectif&nbsp;: que vous repartiez apaisé(e), léger(ère) et ressourcé(e).</p>
+      <ul class="check-list">
+        <li>Séances personnalisées dans un cadre chaleureux</li>
+        <li>Approche douce et respectueuse de votre rythme</li>
+        <li>Cabinet à Arenthon, facile d'accès en Haute-Savoie</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POURQUOI ============ -->
+<section class="section" id="pourquoi">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Pourquoi venir me voir&nbsp;?</span>
+      <h2>Les bienfaits d'une séance</h2>
+      <p class="section-sub">La réflexologie et les massages bien-être agissent en profondeur sur le corps et l'esprit. Quelques raisons de vous offrir ce moment&nbsp;:</p>
+    </div>
+    <div class="benefits-grid">
+      <div class="benefit reveal"><span class="b-ico">🌙</span><h3>Un meilleur sommeil</h3><p>Favoriser l'endormissement et un repos réparateur.</p></div>
+      <div class="benefit reveal"><span class="b-ico">😌</span><h3>Moins de stress</h3><p>Évacuer les tensions et apaiser le mental.</p></div>
+      <div class="benefit reveal"><span class="b-ico">💪</span><h3>Soulager les tensions</h3><p>Détendre les muscles et relâcher les nœuds.</p></div>
+      <div class="benefit reveal"><span class="b-ico">⚖️</span><h3>Rééquilibrer l'énergie</h3><p>Relancer la circulation et l'énergie vitale.</p></div>
+      <div class="benefit reveal"><span class="b-ico">💗</span><h3>Lâcher prise</h3><p>Un vrai temps de pause pour se reconnecter à soi.</p></div>
+      <div class="benefit reveal"><span class="b-ico">🌿</span><h3>Bien-être durable</h3><p>Retrouver vitalité, sérénité et légèreté.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SOINS ============ -->
+<section class="section section--soft" id="soins">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Soins proposés</span>
+      <h2>Des soins pensés pour votre détente</h2>
+      <p class="section-sub">Chaque prestation peut être réalisée seule ou combinée, selon vos envies.</p>
+    </div>
+    <div class="soins-grid">
+      <article class="soin-card reveal">
+        <div class="soin-ico">👣</div>
+        <h3>Réflexologie plantaire</h3>
+        <p>Par la stimulation des zones réflexes du pied, je travaille sur l'ensemble du corps pour relâcher les tensions et rétablir l'équilibre.</p>
+        <a href="#tarifs" class="card-link">Voir les tarifs →</a>
+      </article>
+      <article class="soin-card reveal">
+        <div class="soin-ico">💆‍♀️</div>
+        <h3>Massage bien-être</h3>
+        <p>Massage du dos, de la tête, des bras… un soin enveloppant pour dénouer les tensions et procurer une détente profonde.</p>
+        <a href="#tarifs" class="card-link">Voir les tarifs →</a>
+      </article>
+      <article class="soin-card reveal">
+        <div class="soin-ico">🪑</div>
+        <h3>Massage assis</h3>
+        <p>Un format court et efficace, idéal pour relâcher rapidement les tensions du haut du corps, où que vous soyez.</p>
+        <a href="#tarifs" class="card-link">Voir les tarifs →</a>
+      </article>
+      <article class="soin-card reveal">
+        <div class="soin-ico">✨</div>
+        <h3>Reïki</h3>
+        <p>Une méthode énergétique douce pour harmoniser les énergies, apaiser le mental et favoriser un profond lâcher-prise.</p>
+        <a href="#tarifs" class="card-link">Voir les tarifs →</a>
+      </article>
+      <article class="soin-card reveal">
+        <div class="soin-ico">🌸</div>
+        <h3>Soins combinés</h3>
+        <p>Réflexologie + massage assis&nbsp;: le duo parfait pour un moment de bien-être complet, corps et esprit réunis.</p>
+        <a href="#tarifs" class="card-link">Voir les tarifs →</a>
+      </article>
+      <article class="soin-card reveal">
+        <div class="soin-ico">🎁</div>
+        <h3>Cartes cadeaux</h3>
+        <p>Offrez un instant de sérénité à ceux que vous aimez avec une carte cadeau personnalisée.</p>
+        <a href="#cartes-cadeaux" class="card-link">En savoir plus →</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TARIFS ============ -->
+<section class="section" id="tarifs">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="kicker">Tarifs &amp; forfaits</span>
+      <h2>Tarifs des prestations</h2>
+      <p class="section-sub">Tarifs indicatifs — à confirmer / ajuster selon votre grille réelle.</p>
+    </div>
+    <div class="tarifs-grid">
+      <div class="tarif-card reveal">
+        <h3>Réflexologie plantaire</h3>
+        <div class="price">45&nbsp;€ <span>/ 1h</span></div>
+        <ul>
+          <li>Bilan personnalisé</li>
+          <li>Séance complète</li>
+          <li>Conseils bien-être</li>
+        </ul>
+        <a href="#reservations" class="btn btn-outline">Réserver</a>
+      </div>
+      <div class="tarif-card tarif-card--feature reveal">
+        <span class="ribbon">Le + apprécié</span>
+        <h3>Soin combiné</h3>
+        <div class="price">65&nbsp;€ <span>/ 1h15</span></div>
+        <ul>
+          <li>Réflexologie plantaire</li>
+          <li>+ Massage assis tête/dos/bras</li>
+          <li>Détente complète</li>
+        </ul>
+        <a href="#reservations" class="btn btn-primary">Réserver</a>
+      </div>
+      <div class="tarif-card reveal">
+        <h3>Massage bien-être</h3>
+        <div class="price">50&nbsp;€ <span>/ 1h</span></div>
+        <ul>
+          <li>Dos, tête, bras</li>
+          <li>Huiles relaxantes</li>
+          <li>Détente profonde</li>
+        </ul>
+        <a href="#reservations" class="btn btn-outline">Réserver</a>
+      </div>
+    </div>
+    <div class="forfait-note reveal">
+      <strong>Forfaits&nbsp;:</strong> des forfaits plusieurs séances sont disponibles à tarif préférentiel. Renseignez-vous lors de votre rendez-vous. <em>(Tarifs à compléter)</em>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CARTES CADEAUX ============ -->
+<section class="section section--gift" id="cartes-cadeaux">
+  <div class="wrap gift">
+    <div class="gift-text reveal">
+      <span class="kicker kicker--light">Cartes cadeaux</span>
+      <h2>Offrez un moment de sérénité</h2>
+      <p>Anniversaire, fête, remerciement ou simplement pour faire plaisir&nbsp;: offrez une carte cadeau valable sur l'ensemble des soins. Un cadeau qui fait du bien, à coup sûr.</p>
+      <a href="#reservations" class="btn btn-light">Commander une carte cadeau</a>
+    </div>
+    <div class="gift-card-visual reveal" aria-hidden="true">
+      <div class="gift-card">
+        <span class="gc-ribbon">🎁 Carte Cadeau</span>
+        <div class="gc-brand">En Toute Sérénité 74</div>
+        <div class="gc-soin">Réflexologie • Massage • Reïki</div>
+        <div class="gc-foot">Un instant de bien-être à offrir</div>
       </div>
     </div>
   </div>
 </section>
 
-<section class="stat-strip">
+<!-- ============ AVIS CLIENTS ============ -->
+<section class="section section--soft" id="avis">
   <div class="wrap">
-    <div class="stat-item">
-      <div class="stat-num">— <span class="tbd">à compléter</span></div>
-      <div class="stat-label">Demandes d'estimation générées</div>
+    <div class="section-head reveal">
+      <span class="kicker">Avis clients</span>
+      <h2>Ils ont vécu l'expérience</h2>
     </div>
-    <div class="stat-item">
-      <div class="stat-num">— <span class="tbd">à compléter</span></div>
-      <div class="stat-label">Rendez-vous qualifiés posés</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">— <span class="tbd">à compléter</span></div>
-      <div class="stat-label">Mandats signés pour nos clients</div>
-    </div>
-    <div class="stat-item">
-      <div class="stat-num">— <span class="tbd">à compléter</span></div>
-      <div class="stat-label">Délai moyen avant 1er RDV</div>
-    </div>
-  </div>
-</section>
 
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Comment ça marche</div>
-      <h2>Un système, quatre étapes, un seul objectif : des mandats.</h2>
-      <p>Pas de prospection à froid, pas de génération de leads génériques. Un tunnel pensé spécifiquement pour les vendeurs immobiliers.</p>
+    <!-- Bandeau Google -->
+    <div class="google-summary reveal">
+      <span class="g-logo" aria-label="Google">
+        <svg viewBox="0 0 48 48" width="34" height="34"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+      </span>
+      <div class="g-meta">
+        <span class="g-title">Avis Google</span>
+        <span class="g-stars">
+          <span class="stars">★★★★★</span>
+          <strong>5,0</strong> · Avis vérifiés
+        </span>
+      </div>
+      <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-primary btn-add-review" id="addReview">
+        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></svg>
+        Ajouter un avis
+      </a>
     </div>
-  </div>
-  <div class="wrap">
-    <div class="process-grid">
-      <div class="process-step">
-        <div class="num">01</div>
-        <h3>Audit & ciblage</h3>
-        <p>Analyse de votre zone de chalandise, de votre positionnement et définition précise du profil de vendeur visé.</p>
-      </div>
-      <div class="process-step">
-        <div class="num">02</div>
-        <h3>Campagnes Meta Ads</h3>
-        <p>Création des publicités, du tunnel d'estimation gratuite et mise en place du tracking sur Facebook et Instagram.</p>
-      </div>
-      <div class="process-step">
-        <div class="num">03</div>
-        <h3>Qualification</h3>
-        <p>Chaque demande d'estimation est appelée et qualifiée avant d'être transmise à votre agence.</p>
-      </div>
-      <div class="process-step">
-        <div class="num">04</div>
-        <h3>RDV & mandats</h3>
-        <p>Vous recevez des rendez-vous qualifiés directement dans votre agenda, prêts à être transformés en mandats.</p>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="section section--cream">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Nos services</div>
-      <h2>Tout ce qu'il faut entre la publicité et la signature du mandat.</h2>
-    </div>
-    <div class="card-grid">
-      <div class="card">
-        <div class="num">Service 01</div>
-        <h3>Campagnes Meta Ads ciblées</h3>
-        <p>Ciblage par zone de chalandise, créations publicitaires et optimisation continue du coût par lead.</p>
-        <a href="services.html" class="card-link">En savoir plus →</a>
-      </div>
-      <div class="card">
-        <div class="num">Service 02</div>
-        <h3>Tunnel d'estimation gratuite</h3>
-        <p>Landing page, formulaire qualifiant et suivi automatisé pour transformer un clic en demande sérieuse.</p>
-        <a href="services.html" class="card-link">En savoir plus →</a>
-      </div>
-      <div class="card">
-        <div class="num">Service 03</div>
-        <h3>Qualification & prise de RDV</h3>
-        <p>Chaque lead est appelé, filtré, puis positionné directement dans votre agenda de rendez-vous.</p>
-        <a href="services.html" class="card-link">En savoir plus →</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="wrap">
-    <div class="section-head">
-      <div class="eyebrow">Résultats</div>
-      <h2>Des dossiers clients, pas des promesses.</h2>
-      <p>Chaque campagne donne lieu à un suivi précis : leads, coût par lead, rendez-vous, mandats signés.</p>
-    </div>
-    <div class="card-grid">
-      <div class="dossier-card">
-        <div class="dossier-head"><span class="ref">Dossier n°001</span><span class="fill-tag">à compléter</span></div>
-        <div class="dossier-body">
-          <div class="dossier-row"><span>Ville</span><span>— — — — —</span></div>
-          <div class="dossier-row"><span>Mandats signés</span><span>—</span></div>
-          <div class="dossier-row"><span>Coût par mandat</span><span>— €</span></div>
+    <div class="reviews-grid">
+      <figure class="review reveal">
+        <span class="g-badge" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="20" height="20"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        </span>
+        <div class="r-head">
+          <span class="avatar" style="--a:#7c3aed">L</span>
+          <div><span class="r-name">Lydie R.</span><span class="stars stars-sm">★★★★★</span></div>
         </div>
-      </div>
-      <div class="dossier-card">
-        <div class="dossier-head"><span class="ref">Dossier n°002</span><span class="fill-tag">à compléter</span></div>
-        <div class="dossier-body">
-          <div class="dossier-row"><span>Ville</span><span>— — — — —</span></div>
-          <div class="dossier-row"><span>Mandats signés</span><span>—</span></div>
-          <div class="dossier-row"><span>Coût par mandat</span><span>— €</span></div>
+        <blockquote>Mes enfants m'ont offert un soin combiné réflexologie plantaire et massage tête, dos, bras assis… juste un pur régal. Le 1er soin m'a permis d'évacuer certaines tensions tout en douceur et 3 semaines après ce massage assis m'a vraiment fait lâcher prise. Sylvie a su m'apaiser car j'étais très affectée émotionnellement. Je recommande vraiment, et pour un cadeau vous pouvez y aller sans hésiter. J'ai vraiment été ravie.</blockquote>
+      </figure>
+
+      <figure class="review reveal">
+        <span class="g-badge" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="20" height="20"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        </span>
+        <div class="r-head">
+          <span class="avatar" style="--a:#db2777">A</span>
+          <div><span class="r-name">Aurélie L.</span><span class="stars stars-sm">★★★★★</span></div>
         </div>
-      </div>
-      <div class="dossier-card">
-        <div class="dossier-head"><span class="ref">Dossier n°003</span><span class="fill-tag">à compléter</span></div>
-        <div class="dossier-body">
-          <div class="dossier-row"><span>Ville</span><span>— — — — —</span></div>
-          <div class="dossier-row"><span>Mandats signés</span><span>—</span></div>
-          <div class="dossier-row"><span>Coût par mandat</span><span>— €</span></div>
+        <blockquote>Très bonne séance de réflexologie. On sent que Sylvie a de l'expérience, en plus d'être professionnelle et à l'écoute. Merci beaucoup&nbsp;!</blockquote>
+      </figure>
+
+      <figure class="review reveal">
+        <span class="g-badge" aria-hidden="true">
+          <svg viewBox="0 0 48 48" width="20" height="20"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        </span>
+        <div class="r-head">
+          <span class="avatar" style="--a:#9333ea">M</span>
+          <div><span class="r-name">Marie D.</span><span class="stars stars-sm">★★★★★</span></div>
         </div>
-      </div>
+        <blockquote>Moment de bien-être, de détente et de déconnexion avec Sylvie. Elle est attentive, douce et su me mettre en confiance dès la première séance. Je recommande les yeux fermés. <em>(avis à compléter)</em></blockquote>
+      </figure>
     </div>
-    <div style="margin-top:36px;">
-      <a href="resultats.html" class="btn btn-outline on-light">Voir tous les résultats →</a>
+
+    <div class="reviews-cta reveal">
+      <p>Vous avez vécu un soin&nbsp;? Partagez votre ressenti&nbsp;!</p>
+      <a href="https://www.google.com/maps" target="_blank" rel="noopener" class="btn btn-outline btn-add-review">
+        <svg viewBox="0 0 48 48" width="18" height="18"><path fill="#EA4335" d="M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z"/><path fill="#4285F4" d="M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z"/><path fill="#FBBC05" d="M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z"/><path fill="#34A853" d="M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z"/></svg>
+        Laisser un avis Google
+      </a>
     </div>
   </div>
 </section>
 
-<section class="cta-band">
-  <div class="wrap">
-    <h2>Prêt à remplir votre agenda de rendez-vous vendeurs ?</h2>
-    <p>20 minutes suffisent pour évaluer le potentiel de votre zone et vous présenter notre méthode.</p>
-    <div class="cta-row">
-      <a href="contact.html" class="btn btn-gold">Réserver un appel découverte</a>
-      <a href="services.html" class="btn btn-outline">Voir nos services</a>
+<!-- ============ RESERVATIONS ============ -->
+<section class="section section--cta" id="reservations">
+  <span class="blob blob-3" aria-hidden="true"></span>
+  <div class="wrap reservations">
+    <span class="kicker kicker--light reveal">Réservations en ligne</span>
+    <h2 class="reveal">Prête à vous accueillir</h2>
+    <p class="reveal">Réservez votre séance de réflexologie, de massage bien-être ou de Reïki en quelques clics. Je vous accueille dans mon cabinet à Arenthon, en toute sérénité.</p>
+    <div class="cta-row center reveal">
+      <a href="#" class="btn btn-light btn-glow" id="bookingBtn">Réserver en ligne</a>
+      <a href="tel:+33000000000" class="btn btn-ghost-light">Appeler le cabinet</a>
     </div>
+    <p class="reservation-note reveal"><em>Lien de réservation à connecter (Resalib, Planity, Doctolib…) — voir le bouton « Réserver en ligne ».</em></p>
   </div>
 </section>
 
+<!-- ============ FOOTER ============ -->
 <footer class="site-footer">
-  <div class="wrap">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="logo"><span class="dot"></span>Immo<span class="accent">Leads</span></a>
-        <p>Agence de génération de mandats vendeurs pour agences immobilières indépendantes, via Meta Ads.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Navigation</h4>
-        <ul>
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="resultats.html">Résultats</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <ul>
-          <li>contact@immoleads.fr <span class="fill-tag">à compléter</span></li>
-          <li>+33 — — — — — — <span class="fill-tag">à compléter</span></li>
-          <li>Intervient dans toute la France</li>
-        </ul>
-      </div>
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <a href="#accueil" class="brand brand--footer">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21c-4-3-7-6-7-10a7 7 0 0 1 14 0c0 4-3 7-7 10z"/><path d="M12 11a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+        </span>
+        <span class="brand-text">En Toute Sérénité 74</span>
+      </a>
+      <p>Réflexologie plantaire, massages bien-être et Reïki à Arenthon, Haute-Savoie.</p>
     </div>
-    <div class="footer-bottom">
-      <span>© 2026 ImmoLeads. Tous droits réservés.</span>
-      <span>Mentions légales — à compléter</span>
+    <div class="footer-col">
+      <h4>Navigation</h4>
+      <ul>
+        <li><a href="#qui-suis-je">Qui suis-je&nbsp;?</a></li>
+        <li><a href="#soins">Soins proposés</a></li>
+        <li><a href="#tarifs">Tarifs &amp; forfaits</a></li>
+        <li><a href="#avis">Avis clients</a></li>
+      </ul>
     </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li>📍 Arenthon, Haute-Savoie (74)</li>
+        <li>📞 <a href="tel:+33000000000">À compléter</a></li>
+        <li>✉️ <a href="mailto:contact@en-toute-serenite-74.com">À compléter</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Réserver</h4>
+      <p>Offrez-vous un moment de détente.</p>
+      <a href="#reservations" class="btn btn-primary btn-sm">Prendre rendez-vous</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 En Toute Sérénité 74 — Tous droits réservés.</span>
+    <span>Réflexologie • Massage bien-être • Reïki</span>
   </div>
 </footer>
 
