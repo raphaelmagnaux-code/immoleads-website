@@ -181,6 +181,8 @@ body .btn-outline.on-light{
 }
 
 /* ---------- Brand / studio name (en vedette) ---------- */
+.logo img{ height:46px; width:auto; display:block; }
+.footer-brand .logo img{ height:54px; }
 .logo{
   font-family:var(--display);
   font-size:23px;
